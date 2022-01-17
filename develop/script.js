@@ -157,19 +157,19 @@ var specialCharacters = [
     // Made it so everything gets pushed into an array first, then randomly chosen from there.
   
     // Confirm to the user what parameters they want for their password
-    isLower = confirm("Would you like to include lower case characters?");
+    isLower = confirm("Would you like to include lower case characters? OK for yes Cancel for no");
     if (isLower) {
       selectedArray.push(lowerCasedCharacters);
     }
-    isUpper = confirm("Would you like to include upper case characters?");
+    isUpper = confirm("Would you like to include upper case characters? OK for yes Cancel for no");
     if (isUpper) {
       selectedArray.push(upperCasedCharacters);
     }
-    isNumber = confirm("Would you like to include numbers?");
+    isNumber = confirm("Would you like to include numbers? OK for yes Cancel for no");
     if (isNumber) {
       selectedArray.push(numericCharacters);
     }
-    isSpecial = confirm("Would you like to include special characters?");
+    isSpecial = confirm("Would you like to include special characters? OK for yes Cancel for no");
     if (isSpecial) {
       selectedArray.push(specialCharacters);
     }
@@ -203,17 +203,18 @@ var specialCharacters = [
     return arr[randomIndex];
   }
 
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+//comment out for compatibility of script as the following is redundant. 
+// // Get references to the #generate element
+// var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+// // Write password to the #password input
+// function writePassword() {
+//   var password = generatePassword();
+//   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+//   passwordText.value = password;
 
-}
+// }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+// // Add event listener to generate button
+// generateBtn.addEventListener("click", writePassword)
