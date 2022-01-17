@@ -1,5 +1,4 @@
-# Password-Generator
-https://eransom1.github.io/Password-Generator/
+# Password_Generator
 Password Generator:
 GIVEN I need a new, secure password
 WHEN I click the button to generate a password
